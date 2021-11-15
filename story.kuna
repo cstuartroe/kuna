@@ -1,0 +1,20 @@
+NEW ENTITY e1;
+NAME "Mina" e1;
+PROPERTY "human" e1 TIME tnow;
+PROPERTY "adult" e1 TIME tnow;
+PROPERTY "female" e1 TIME tnow;
+
+NEW ENTITY e2;
+PROPERTY "apple" e2;
+NEW TIME t1;
+ORDER t1 < tnow;
+PROPERTY "possess" e1 e2 TIME t1;
+
+NEW ENTITY e3;
+NAME "Eli" e3;
+PROPERTY "human" e3 TIME tnow;
+PROPERTY "adult" e3 TIME tnow;
+PROPERTY "male" e3 TIME tnow;
+NEW TIME t2;
+ORDER t2 < tnow;
+PROPERTY "eat" e3 e2 TIME t2 CAUSE e3;

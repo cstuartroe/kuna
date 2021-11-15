@@ -1,0 +1,4 @@
+Mina is a woman.
+Mina had an apple.
+Eli is a man.
+Eli ate Mina's apple.
